@@ -42,10 +42,6 @@ body {
     margin-top: -2px;
 }
 
-.header__nav {
-    /* max-width: 1344.1px; */
-}
-
 .nav__list {
     display: flex;
     margin-top: 29px;   
