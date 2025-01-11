@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Inter;
+    src: url('../font/Inter-Medium.eot');
+    src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: boldItalic;
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: thinItalic;
+    src: url(../fonts/roboto-condensed-thin-italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}

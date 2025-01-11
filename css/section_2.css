@@ -1,0 +1,70 @@
+:root {
+    --tortilla:rgb(154, 123, 79);
+    --wh:rgb(255, 255, 204);
+    --card-bg:rgb(138, 85, 56);
+}
+
+.section__2 {
+    max-width: 1652px;
+    margin: 0 auto;
+}
+
+.section__2-header {
+    color: var(--wh);
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70px;
+    margin-left: 35px;
+}
+
+.section__2_card {
+    margin-top: 91px;
+}
+
+.card__name2 {
+    width: 141px;
+    height: 56px;
+    margin-bottom: 15px;
+}
+
+.card__position {
+    width: 210px;
+    font-family: Roboto;
+    color: var(--wh);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-left: 13px;
+}
+
+/* -------toggle -------*/
+
+.section-toggle_ {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    transform: rotate(-45.00deg);
+    box-shadow: -6px 6px 1.3px 0px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--wh);
+    border-left: 4px solid var(--wh);
+    top: -21px;
+    cursor: pointer;
+    transition: height 0.3s ease;
+}
+
+.section-toggle_:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.section-toggle_.active {
+    width: 35px;
+    height: 35px;
+    transform: rotate(-225deg);
+    top: 8px;
+    box-shadow: inset 6px -6px 1.3px 0px rgba(0, 0, 0, 0.75);
+    background: transparent;
+}
+

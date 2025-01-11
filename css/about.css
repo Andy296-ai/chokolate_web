@@ -1,0 +1,76 @@
+:root {
+    --container-background:rgb(54, 35, 18);
+    --wh:rgb(255, 255, 204);
+}
+
+.section__4 {
+    max-width: 1606px;
+    margin: 0 auto;
+}
+
+.section4__header {
+    font-family: Roboto;
+    color: var(--wh);
+    height: 60px;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 68px;
+    margin-left: 12px;
+    text-align: left;
+}
+
+.about__cont {
+    margin-top: 93px;
+    border: 3px solid var(--wh);
+    box-shadow: 11px 15px 5.8px 0px rgba(0, 0, 0, 0.55),inset 0px 0px 7.7px 20px rgba(0, 0, 0, 0.25);
+    background: var(--container-background);
+    padding: 23px 16px 35px 13px;
+    margin-bottom: 153px;
+}
+
+.about__top {
+    margin-bottom: 27px;
+}
+
+.about__text {
+    color: var(--wh);
+    font-family: Roboto;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about__list {
+    list-style-type: disc;
+    margin-left: 36px;
+    line-height: 27px;
+}
+
+.section-toggle___ {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    transform: rotate(-45.00deg);
+    box-shadow: -6px 6px 1.3px 0px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--wh);
+    border-left: 4px solid var(--wh);
+    top: -21px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.section-toggle___:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.section-toggle___.active {
+    width: 35px;
+    height: 35px;
+    transform: rotate(-225deg);
+    top: 8px;
+    box-shadow: inset 6px -6px 1.3px 0px rgba(0, 0, 0, 0.75);
+    background: transparent;
+}

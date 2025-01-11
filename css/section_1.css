@@ -1,0 +1,183 @@
+:root {
+    --background-color:rgb(43, 23, 0);
+    --tortilla:rgb(154, 123, 79);
+    --wh:rgb(255, 255, 204);
+    --card-bg:rgb(138, 85, 56);
+}
+
+.section-1 {
+    max-width: 1652px;
+    margin: 0 auto;
+}
+
+.section-1__title {
+    max-width: 1638px;
+    margin-left: 35px;
+}
+
+.section-1__txt {
+    display: flex;
+    gap: 378px;
+    max-height: 68px;
+    align-items: center;
+}
+
+.section-1__header {
+    font-family: Roboto;
+    color: var(--wh);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 75px;
+}
+
+.section-1__text {
+    font-family: Roboto;
+    color: var(--wh);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 92px;
+    height: 28px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.section-1__btn {
+    display: flex;
+    gap: 15.3%;
+    margin-top: 68px;
+}
+
+.btn-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    row-gap: 25px;
+}
+
+.btn, .btn__ {
+    width: 256px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 3px solid var(--wh);
+    border-radius: 15px;
+    box-shadow: 8px 8px 7px 0px rgba(0, 0, 0, 0.45);
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--wh);
+    font-family: boldItalic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.btn:hover, .btn__:hover {
+    border: none;
+}
+
+.btn-inp:checked + .btn {
+    background: var(--wh);
+    color: var(--background-color);
+}
+
+.btn-inp__:checked + .btn__ {
+    background: var(--wh);
+    color: var(--background-color);
+}
+
+/* cards */
+
+.sections__card {
+    max-width: 1652px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+    row-gap: 89px;
+    margin-top: 100px;
+}
+
+.card__item {
+    width: 242px;
+    height: 413px;
+    border-radius: 20px;
+    border: 6px solid var(--wh);
+    background: var(--card-bg);
+    cursor: pointer;
+    box-shadow: 12px 13px 10px 7px rgba(0, 0, 0, 0.55);
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__item:hover {
+    transform: translateY(-20px);
+    box-shadow: 15px 30px 25px rgba(0, 0, 0, 1);
+}
+
+.card__name {
+    width: 220px;
+    height: 27px;
+    margin-top: 44px;
+    margin-bottom: 37px;
+    margin-left: 11px;
+    font-family: Roboto;
+    font-size: 23.31px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--wh);
+}
+
+.card__price {
+    font-family: Roboto;
+    margin-left: 80px;
+    font-size: 24.5px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: var(--wh);
+}
+
+.toggle__cont {
+    position: relative;
+    width: 100%;
+    margin-top: 145px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-toggle {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    transform: rotate(-45.00deg);
+    box-shadow: -6px 6px 1.3px 0px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--wh);
+    border-left: 4px solid var(--wh);
+    top: -21px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.section-toggle:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.section-toggle.active {
+    width: 35px;
+    height: 35px;
+    transform: rotate(-225deg);
+    top: 8px;
+    box-shadow: inset 6px -6px 1.3px 0px rgba(0, 0, 0, 0.75);
+    background: transparent;
+}
