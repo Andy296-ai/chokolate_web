@@ -91,7 +91,7 @@
     box-shadow: inset 0px 0px 4px 5px rgba(0, 0, 0, 0.65),0px 4px 120px 0px rgba(116, 72, 48, 0.7);
     background: radial-gradient(84.00% 100.00% at 50% 0%,rgba(0, 0, 0, 0),rgba(255, 255, 204, 0.15) 100%),linear-gradient(180.00deg, rgb(54, 35, 18) -6.071%,rgb(41, 26, 18) 121.071%);
     top: 469px;
-    left: 1605px;
+    right: 8.85%;
     color: var(--wh);
     font-family: Roboto;
     font-size: 28px;

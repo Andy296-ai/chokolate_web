@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/feedback_form/styles.css">
     <title>Chocolate_web</title>
 </head>
 <body>
@@ -232,6 +233,59 @@
                 </script>
             </div>
         </section>
+
+        <div class="backdrop" id="backdrop"></div>
+        <form class="review-form" id="reviewForm" novalidate>
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            
+            <div class="form-group">
+                <label for="name"></label>
+                <input class="name_input" type="text" id="name" placeholder="имя" required>
+            </div>
+
+            <div class="form-group">
+                <label for="review"></label>
+                <textarea id="review" rows="4" placeholder="Расскажите о вашем опыте..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <img src="./images/send.svg" alt="send_btn_error" class="send_btn">
+            </div>
+
+            <script>
+                const backdrop = document.getElementById('backdrop');
+                const form = document.getElementById('reviewForm');
+                const openBtn = document.getElementById('toggle_1');
+                openBtn.addEventListener("click", (event) => {
+                    form.classList.remove('fade-out'); 
+                    form.classList.add('fade-in');
+                    form.style.display = 'block';
+                    backdrop.style.display = 'block';
+                });
+
+                const closeForm = () => {
+                    form.classList.remove('fade-in'); 
+                    form.classList.add('fade-out');
+                    form.addEventListener('animationend', () => {
+                        form.style.display = 'none'; 
+                        backdrop.style.display = 'none'; 
+                        form.classList.remove('fade-out'); 
+                    }, { once: true });
+                };
+
+                const submitReview = () => {
+                    const name = document.getElementById('name').value;
+                    const review = document.getElementById('review').value;
+                    if(name && review) {
+                        closeForm();
+                        alert('Спасибо за отзыв');
+                    } else {
+                        alert('Пожалуйста, заполните все поля!');
+                    }
+
+                };
+            </script>
+        </form>
 
         <hr class="hr__line" id="s4">
 
