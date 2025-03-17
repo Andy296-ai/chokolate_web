@@ -1,0 +1,128 @@
+:root {
+    --background-color:rgb(43, 23, 0);
+    --container-background:rgb(54, 35, 18);
+    --tortilla:rgb(154, 123, 79);
+    --wh:rgb(255, 255, 204);
+    --card-bg:rgb(138, 85, 56);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    background-color: var(--container-background);
+    margin: 0 auto;
+    max-width: 1680px;
+    padding-bottom: 144px;
+}
+
+.top__header-cont {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    width: 1651px;
+    height: 125px;
+    background: var(--container-background);
+    padding-left: 29px;
+}
+
+.top__header {
+    display: flex;
+    align-items: center;
+    gap: 92px;
+    
+}
+
+.header__logo {
+    margin-top: -2px;
+}
+
+.nav__list {
+    display: flex;
+    margin-top: 29px;   
+}
+
+.s1 {
+    margin-left: 5.3px;
+}
+
+.s2 {
+    margin-left: 191.22px;
+}
+
+.s3 {
+    margin-left: 210px;
+}
+
+.s4 {
+    margin-left: 190px;
+}
+
+.s5 {
+    margin-left: 150px;
+}
+
+.nav__link {
+    color: var(--wh);
+    font-family: Inter;
+    font-size: 24.6px;
+    font-weight: 400;
+    line-height: 29px
+}
+
+.nav__link:hover {
+    text-decoration-line: underline;
+}
+
+.nav__link:active {
+    font-weight: bold;
+    -webkit-text-stroke:0.4 var(--wh);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+/* bottom__header */
+
+.hr__line-top {
+    position: fixed;
+    z-index: 1000;
+    width: 1676px;
+    border: 2px solid var(--wh);
+    box-shadow: 0px 5px 4.2px 0px rgb(0, 0, 0);
+    margin-top : 121px;
+}
+
+/* --------------- */
+
+.header {
+    width: 1680px;
+    margin-top: 193px;
+    margin-bottom: 81px;
+}
+
+.bottom__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr__line {
+    width: 99.%;
+    border: 2px solid rgb(255, 255, 204);
+    box-shadow: 0px -5px 4.2px 0px rgb(0, 0, 0);
+    margin-top: 31px;
+    margin-bottom: 86px;
+}

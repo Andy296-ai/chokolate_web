@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/header/small_logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/section_1.css">
+    <link rel="stylesheet" href="./css/section_2.css">
+    <link rel="stylesheet" href="./css/section_3.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Chocolate_web</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top__header-cont">
+            <div class="top__header">
+                <div class="header__logo">
+                    <img src="./images/header/small_logo.svg" alt="error_smallLogo">
+                </div>
+                <div class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item s1"><a href="#s1" class="nav__link">Услуги и цены</a></li>
+                        <li class="nav__item s2"><a href="#s2" class="nav__link">Специалисты</a></li>
+                        <li class="nav__item s3"><a href="#s3" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item s4"><a href="#s4" class="nav__link">О нас</a></li>
+                        <li class="nav__item s5"><a href="#s5" class="nav__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr__line-top">
+        <script>
+            const top__header = document.querySelector('.top__header-cont');
+            const hr__line = document.querySelector('.hr__line-top');
+            const nav = document.querySelector('.top__header');
+            const nav__list = document.querySelector('.nav__list');
+            const header__logo = document.querySelector('.header__logo');
+
+            window.addEventListener('scroll', function() {
+                let scrollPos = window.scrollY;
+
+                if (scrollPos > 100){
+                    nav.style.margin = '0 auto';
+                    header__logo.style.display = 'none';
+                    top__header.style.height = '85px';
+                    hr__line.style.marginTop = '85px';
+                    nav__list.style.marginTop = '0px';
+                }else {
+                    nav.style.margin = '0';
+                    header__logo.style.display = 'flex';
+                    top__header.style.height = `125px`;
+                    hr__line.style.marginTop = `121px`;
+                    nav__list.style.marginTop = `27px`;
+                }
+            })
+        </script>
+        <header class="header">
+            <div class="bottom__header">
+                <img src="./images/header/big_logo.svg" alt="Error">
+            </div>
+        </header>
+
+        <hr class="hr__line" id="s1">
+
+        <section class="section-1" id="section-1">
+            <div class="section-1__title">
+                <div class="section-1__txt">
+                    <h2 class="section-1__header">Услуги и цены</h2>
+                    <p class="section-1__text">Выберите салон:</p>
+                </div>
+
+                <div class="section-1__btn">
+                    <div class="btn-cont">
+                        <input type="radio" name="checkbox" id="btn1" style="display: none;" class="btn-inp">
+                        <label for="btn1" class="btn">Для дам</label>
+                        <input type="radio" name="checkbox" id="btn2" style="display: none;" class="btn-inp">
+                        <label for="btn2" class="btn">Для мужчин</label>
+                    </div>
+                    
+                    <div class="btn-cont">
+                        <input type="radio" name="radio" id="btn3" style="display: none;" class="btn-inp__">
+                        <label for="btn3" class="btn__">Северный</label>
+                        <input type="radio" name="radio" id="btn4" style="display: none;" class="btn-inp__">
+                        <label for="btn4" class="btn__">Вознесенская</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sections__card">
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_1/i1.png" alt="error">
+                    <p class="card__name">SPA для двоих</p>
+                    <p class="card__price"><span>13000</span> руб</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_1/i6.png" alt="error">
+                    <p class="card__name">Парикмахерский зал ж</p>
+                    <p class="card__price"><span>1200</span> руб</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_1/i7.png" alt="error">
+                    <p class="card__name">Уход за руками</p>
+                    <p class="card__price"><span>1200</span> руб</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_1/i8.png" alt="error">
+                    <p class="card__name">Уход за ногами</p>
+                    <p class="card__price"><span>900</span> руб</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_1/i9.png" alt="error">
+                    <p class="card__name">Уход за лицом</p>
+                    <p class="card__price"><span>1600</span> руб</p>
+                </div>
+            </div>
+
+            <div class="toggle__cont">
+                    <div class="section-toggle"></div>
+                    <script>
+                        const button = document.querySelector('.section-toggle'); button.addEventListener('click', function() {  button.classList.toggle('active');});
+                    </script>
+            </div>
+        </section>
+
+        <hr class="hr__line" id="s2">
+
+        <section class="section__2" id="section-2">
+            <h2 class="section__2-header">Специалисты</h2>
+            <div class="sections__card section__2_card">
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f1.png" alt="error">
+                    <p class="card__name card__name2">Евгения Барбашова</p>
+                    <p class="card__position">парикмахер</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f2.png" alt="error">
+                    <p class="card__name card__name2">Кафтырева Анастасия</p>
+                    <p class="card__position">парикмахер</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f3.png" alt="error">
+                    <p class="card__name card__name2">Радченко Алена</p>
+                    <p class="card__position">парикмахер</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f4.png" alt="error">
+                    <p class="card__name card__name2">Арина Гоголева</p>
+                    <p class="card__position">мастер ногтевого сервиса</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f5.png" alt="error">
+                    <p class="card__name card__name2">Екатерина Гичка</p>
+                    <p class="card__position">косметолог-эстетист</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f6.png" alt="error">
+                    <p class="card__name card__name2">Есенина Наталия</p>
+                    <p class="card__position">лашмэйкер</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f7.png" alt="error">
+                    <p class="card__name card__name2">Блинова Валерия</p>
+                    <p class="card__position">SPA-мастер</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f8.png" alt="error">
+                    <p class="card__name card__name2">Комлева Наталья</p>
+                    <p class="card__position">стилист-колорист</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f9.png" alt="error">
+                    <p class="card__name card__name2">Маркина Анастасия</p>
+                    <p class="card__position">мастер ногтевого сервиса</p>
+                </div>
+                <div class="card__item">
+                    <img class="card__image" src="./images/section_2/f10.png" alt="error">
+                    <p class="card__name card__name2">Леонова Марианна</p>
+                    <p class="card__position">косметолог-эстетист</p>
+                </div>
+            </div>
+
+            <div class="toggle__cont">
+                <div class="section-toggle_"></div>
+                <script>
+                    const btn_1 = document.querySelector('.section-toggle_'); btn_1.addEventListener('click', function() {  btn_1.classList.toggle('active');});
+                </script>
+            </div>
+        </section>
+
+        <hr class="hr__line" id="s3">
+
+        <section class="section_3 feedback">
+            <div class="section__title">
+                <h2 class="section__title-text">Отзывы</h2>
+                <button class="section__toggle" id="toggle_1">Оставить отзыв</button>
+            </div>
+            <div class="feedback__cont">
+                <div class="feedback__item">
+                    <div class="user__feedback">
+                        <p class="user__text">Как всегда идеальная стрижка выполнена Нонной Шаниной! От волшебных ручек этого мастера ощущается тепло, добро и непревзойденный профессионализм!</p>
+                        <div class="user__feedback-footer">
+                            <div class="user__name">Надежда</div>
+                            <div class="feedback__date">06.06.2024</div>
+                        </div>
+                    </div>
+
+                    <div class="answer">
+                        <p class="answer__text">Большое шоколадное спасибо!</p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <div class="user__feedback">
+                        <p class="user__text">Спасибо Алёне Радченко за стрижку, засыпали комплиментами</p>
+                        <div class="user__feedback-footer">
+                            <div class="user__name">Светлана</div>
+                            <div class="feedback__date">20.07.2023</div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle__cont">
+                <div class="section-toggle__"></div>
+                <script>
+                    const btn_2 = document.querySelector('.section-toggle__'); btn_2.addEventListener('click', function() {  btn_2.classList.toggle('active');});
+                </script>
+            </div>
+        </section>
+
+        <hr class="hr__line" id="s4">
+
+        <section class="section__4 about_us">
+            <h2 class="section4__header">О нас</h2>
+            <div class="about__cont">
+                <p class="about__text about__top">Салон красоты «Шоколад» это- современный дизайн, по-домашнему доброжелательная атмосфера, отличное обслуживание с помощью дружной команды квалифицированных, креативных и позитивных специалистов!</p>
+
+                    <p class="about__text">Только у нас:</p>
+                    <ul class="about__list about__text">
+                        <li>– Шоколадный загар</li>
+                        <li>– Шоколадный SPA-маникюр и SPA-педикюр</li>
+                        <li>– Уход за лицом "Шоколадный десерт"</li>
+                        <li>– Шоколадное обертывание "Горячий шоколад"</li>
+                        <li>– SPA-программы "Шоколадное наслаждение" и "Шоколадные грезы"</li>
+                        <li>– Шоколадная маска для волос</li>
+                        <li>– Шоколадные подарочные сертификаты</li>
+                        <li>– Каждому гостю чашечка горячего шоколада, улыбки и хорошее настроение в подарок!</li>
+                        <li>– Окунитесь в удовольствие и скажите себе «Я в шоколаде!»</li>
+                    </ul>
+            </div>
+            <div class="toggle__cont">
+                <div class="section-toggle___"></div>
+                <script>
+                    const btn_3 = document.querySelector('.section-toggle___'); btn_3.addEventListener('click', function() {  btn_3.classList.toggle('active');});
+                </script>
+            </div>
+        </section>
+
+        <hr class="hr__line" id="s5">
+
+        <footer class="footer">
+            <h2 class="footer__header">Контакты</h2>
+
+            <div class="footer__cont">
+                <div class="cont__part">
+                    <h3 class="footer__cont-header">Северный:</h3>
+                    <iframe class="footer__map" src="https://go.2gis.com/7KsjS" frameborder="0"></iframe>
+                    <p class="footer__mapaddress">г. Сергиев Посад проспект Красной Армии, 251А посёлок Северный</p>
+                </div>
+
+                <div class="cont__part">
+                    <h3 class="footer__cont-header">Вознесенская:</h3>
+                    <iframe class="footer__map" src="https://go.2gis.com/TRIRt" frameborder="0"></iframe>
+                    <p class="footer__mapaddress">г. Сергиев Посад улица Вознесенская до 80</p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__bottom-text">Ежедневно с 10:00 до 21:00</p>
+                <p class="footer__bottom-text">тел: +7 (499) 455-01-30</p>
+                <p class="footer__bottom-text us__social"><span>Мы в соц:</span><img class="footer__svg" src="./images/footer/instagram.svg" alt="error"><img class="footer__svg" src="./images/footer/vk.svg" alt="error"></p>
+            </div>
+        </footer>
+
+        <button class="online-recording__btn"><p style="width: 132px;">ONLINE ЗАПИСЬ</p></button>
+
+    </div>
+</body>
+</html>
